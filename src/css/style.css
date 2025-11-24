@@ -1,0 +1,170 @@
+:root {
+    --bacgroun-color: rgba(230, 230, 230, 0.747);
+    --arif-symbol: orange;
+    --numbers: black;
+    --hover: rgb(255, 255, 255);
+    --active: rgba(145, 132, 132, 0.747);
+    --box: rgb(255, 255, 255);
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: var(--bacgroun-color);
+}
+
+main {
+    width: 100%;
+    height: 100%;
+}
+
+/* Шрифт */
+.nunito-uniquifier {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+/*                                                       Калькулятор                   */
+
+.calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+
+.conteiner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 8px;
+    color: var(--numbers);
+    width: 40%;
+    height: 400px;   
+}
+
+.conteiner div {
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
+    text-align: center;
+    border-radius: 10px;
+    background-color: var(--box);
+}
+
+
+.conteiner > div:not(:first-child):hover {
+    background-color: var(--active);
+    cursor: pointer;
+}
+
+.conteiner > div:not(:first-child):active {
+    background-color: var(--hover);
+    cursor: pointer;
+}
+
+/* ROW 1 */
+.conteiner .div1 {
+    grid-column: span 4;
+}
+
+/* ROW 2 */
+.conteiner .div2 {
+    grid-row-start: 2;
+    color: var(--arif-symbol);
+}
+
+.conteiner .div3 {
+    grid-row-start: 2;
+    color: var(--arif-symbol);
+}
+
+.conteiner .div4 {
+    grid-row-start: 2;
+    color: var(--arif-symbol);
+}
+
+.conteiner .div5 {
+    grid-row-start: 2;
+    color: var(--arif-symbol);
+}
+
+/* ROW 3 */
+.conteiner .div6 {
+    grid-row-start: 3;
+}
+
+.conteiner .div7 {
+    grid-row-start: 3;
+}
+
+.conteiner .div8 {
+    grid-row-start: 3;
+}
+
+.conteiner .div9 {
+    grid-row-start: 3;
+    color: var(--arif-symbol);
+}
+
+/* ROW 4 */
+.conteiner .div10 {
+    grid-row-start: 4;
+}
+
+.conteiner .div11 {
+    grid-row-start: 4;
+}
+
+.conteiner .div12 {
+    grid-row-start: 4;
+}
+
+.conteiner .div13 {
+    grid-row-start: 4;
+    color: var(--arif-symbol);
+}
+
+/* ROW 5 */
+.conteiner .div14 {
+    grid-row-start: 5;
+}
+
+.conteiner .div15 {
+    grid-row-start: 5;
+}
+
+.conteiner .div16 {
+    grid-row-start: 5;
+}
+
+.conteiner .div17 {
+    grid-row-start: 5;
+    color: var(--arif-symbol);
+}
+
+/* ROW 6 */
+.conteiner .div18 {
+    grid-row-start: 6;
+}
+
+.conteiner .div19 {
+    grid-row-start: 6;
+}
+
+.conteiner .div20 {
+    grid-row-start: 6;
+}
+
+.conteiner .div21 {
+    grid-row-start: 6;
+    color: var(--arif-symbol);
+}
